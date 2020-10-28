@@ -123,9 +123,19 @@ p {
 .w10 {
     width: 10%;
 }
+
+.max .w10 {
+    width: 20%;
+}
+
 .w20 {
     width: 20%;
 }
+
+.max .w20 {
+    width: 30%;
+}
+
 .w30 {
     width: 30%;
 }
