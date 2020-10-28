@@ -1,0 +1,101 @@
+:root{
+    --primary_color: orange;
+}
+body {
+    margin: 0;
+}
+header, footer {
+    height: 12vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+header h1 {
+    color: var(--primary_color);
+}
+h1, h2 {
+    margin: 0;
+}
+main {
+    display: grid;
+    height: 76vh;
+    background-color: rgb(50, 50, 50);
+}
+main h2 {
+    margin: 8px 0;
+    text-align: center;
+    color: white;
+}
+.contenedor {
+    height: 70vh;
+    width: 55%;
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+}
+.scroll {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+footer img {
+    height: 50px;
+}
+footer h2 {
+    font-size: 20px;
+}
+.pie {
+    justify-self: center;
+    width: 35%;
+}
+.linea {
+    display: grid;
+    justify-items: center;
+}
+hr {
+    border-color: var(--primary_color);
+    margin: 1px;
+    animation: load 2s ease-out forwards;
+}
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5%;
+}
+.col3 {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+@keyframes load {
+    from {width: 0%}
+    to {width: 100%}
+}
+.rrss {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 70%;
+}
+.icono_rrss:hover {
+    animation: escalar_icono 1s forwards;
+    -webkit-animation: escalar_icono 1s forwards;
+    -moz-animation: escalar_icono 1s forwards;
+}
+@keyframes escalar_icono {
+    from {transform: scale(1)}
+    to {transform: scale(1.1)}
+}
+.icono_rrss:not(:hover){
+    animation: desescalar_icono 1s forwards;
+    -webkit-animation: desescalar_icono 1s forwards;
+    -moz-animation: desescalar_icono 1s forwards;
+}
+@keyframes desescalar_icono {
+    from {transform: scale(1.1)}
+    to {transform: scale(1)}
+}
