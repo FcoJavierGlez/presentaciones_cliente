@@ -209,12 +209,118 @@
                     </div>
                 </div>
 
-                <div id="21" class="slide slide-hide">
+                <div id="22" class="slide slide-hide">
                     <div class="container-slide">
                         <p class="subtitle">Templates Literals</p>
                         <p>Las plantillas literales son cadenas literales que permiten el uso de expresiones incrustadas. Con ellas, se pueden usar cadenas de caracteres de más de una línea.
                         Para crearlas es necesario usar las tildes invertidas(``). Para poder usar una variable dentro de estas es necesario usar lo siguiente: ${expresión/variable}.</p>
                         <img src="../img/string/templates.PNG" alt="" class="w60 img-left">
+                    </div>
+                </div>
+
+                <div id="23" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">¿Qué es una expresión regular?</p>
+                        <p>Una expresión regular nos permite encontrar elementos o secciones coincidentes en una cadena respecto a un patrón definido.</p>
+                        <img src="../img/string_regex/match.PNG" alt="" class="w50 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="24" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Formas de crearlas</p>
+                        <p>Existen dos formas de crear una RegExp:</p>
+                        <ul>
+                            <li><b>Forma literal</b></li>
+                            <li><b>Usando el constructor new RegExp()</b></li>
+                        </ul>
+                        <img src="../img/regex/creation_regexp.PNG" alt="" class="w50 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="25" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p><b>/\w/ Word</b> nos permite capturar cualquier letra, equivalente a [A-Za-z0-9_]:</p>
+                        <img src="../img/regex/backslash_w.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/\W/ Not word</b> al revés que el caso anterior, equivale a [^A-Za-z0-9_]:</p>
+                        <img src="../img/regex/backslash_w_upper.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="26" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p><b>/\d/ Digit</b> nos permite capturar cualquier dígito, equivalente a [0-9]:</p>
+                        <img src="../img/regex/backslash_d.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/\D/ Not digit</b> al revés que el caso anterior, equivale a [^0-9]:</p>
+                        <img src="../img/regex/backslash_d_upper.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="27" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p><b>/\s/ Whitespace</b> nos permite capturar un espacio en blanco:</p>
+                        <img src="../img/regex/backslash_s.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/\S/ Not whitespace</b> al revés que el caso anterior:</p>
+                        <img src="../img/regex/backslash_s_upper.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="28" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p><b>/\t/ Tab</b> nos permite capturar una tabulación:</p>
+                        <img src="../img/regex/backslash_t.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/\n/ Line feed</b> nos permite capturar un salto de línea:</p>
+                        <img src="../img/regex/backslash_n.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="29" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p><b>/./ Dot</b> nos permite capturar cualquier caracter:</p>
+                        <img src="../img/regex/dot.png" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="30" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p><b>/a?/ Optional</b> el elemento o grupo que precede a este caracter es opcional puede estar o no:</p>
+                        <img src="../img/regex/optional.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/a+/ Plus</b> el elemento o grupo que precede a este caracter aparecerá una o más veces:</p>
+                        <img src="../img/regex/plus.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="31" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p><b>/a*/ Star</b> el elemento o grupo que precede a este caracter aparecerá cero o más veces:</p>
+                        <img src="../img/regex/star.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/a{4}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador:</p>
+                        <img src="../img/regex/quantifier1.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="32" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p><b>/a{1,3}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador entre un valor mínimo y un valor máximo:</p>
+                        <img src="../img/regex/quantifier2.PNG" alt="" class="w15 margin-0-auto">
+                        <p><b>/a{1,}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador con un valor mínimo pero un máximo indefinido:</p>
+                        <img src="../img/regex/quantifier1.5.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="33" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p><b>/a(e|i)+)/ Alternation</b> finalmente el alternador que nos permite elegir entre múltiples posibilidades:</p>
+                        <img src="../img/regex/alternation.PNG" alt="" class="w20 margin-0-auto">
                     </div>
                 </div>
 

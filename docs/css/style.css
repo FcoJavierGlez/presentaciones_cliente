@@ -30,7 +30,7 @@ main h2 {
 }
 .contenedor {
     height: 70vh;
-    width: 55%;
+    width: 75%;
     margin: 0 auto;
     justify-content: center;
     align-self: center;
@@ -66,9 +66,15 @@ hr {
     grid-template-columns: repeat(2,1fr);
     column-gap: 5%;
 }
-.col3 {
+footer .col3 {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+}
+.col3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5%;
+    align-content: center;
 }
 @keyframes load {
     from {width: 0%}
@@ -98,4 +104,44 @@ hr {
 @keyframes desescalar_icono {
     from {transform: scale(1.1)}
     to {transform: scale(1)}
+}
+.card-presentation {
+    border: 3px solid crimson;
+    border-radius: 15px;
+    height: 60vh;
+    margin: 5% auto;
+    position: relative;
+}
+.card-presentation:hover {
+    animation: card_presentation 2s forwards;
+    -webkit-animation: card_presentation 2s forwards;
+    -moz-animation: card_presentation 2s forwards;
+}
+@keyframes card_presentation {
+    from { transform: scale(1) }
+    to { transform: scale(1.1) }
+}
+.card-presentation:not(:hover) {
+    animation: cancel_card_presentation 2s forwards;
+    -webkit-animation: cancel_card_presentation 2s forwards;
+    -moz-animation: cancel_card_presentation 2s forwards;
+}
+@keyframes cancel_card_presentation {
+    from { transform: scale(1.1) }
+    to { transform: scale(1) }
+}
+.card-string {
+    background-image: url(../img/string/card_string.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-json {
+    background-image: url(../img/json/card_json.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-na{
+    background-color: white;
 }
