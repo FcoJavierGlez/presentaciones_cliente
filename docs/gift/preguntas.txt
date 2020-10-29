@@ -1,0 +1,89 @@
+$CATEGORY: String, Regexp y JSon
+
+//Pregunta 1:
+::String :: ¿Qué es String? {
+    =Un String es un tipo de dato primitivo que es inmutable y que se utiliza para representar y manipular una secuencia de caracteres.
+    ~Un String es un tipo de dato primitivo que es mutable y que se utiliza para representar y manipular una secuencia de caracteres. 
+}
+
+//Pregunta 2:
+::declaracion :: Maneras de declarar un String, elige una o varias opciones.{
+    ~%-50%let cadena \= new String("Hola mundo")
+    ~%50%let cadena \= String ("Hola Mundo")
+    ~%50%let cadena \= "Hola Mundo"
+    ~%-50%let cadena \= new ("Hola Mundo")
+}
+
+//Pregunta 3:
+::lenght :: La propiedad {=length} de un objeto String representa la longitud de una cadena.
+
+//Pregunta 4:
+::metodo trim() :: Función del metodo trim().{
+    ~Quita los espacios en blanco de una cadena empezando por delante.
+    =Quita los espacios en blanco de una cadena tanto por delante como por detrás.
+    ~Quita los espacios en blanco de una cadena por detrás.
+}
+
+//Pregunta 5:
+::metodo include() :: let cadena \= "Hola Mundo". ¿Qué devuelve si hacemos cadena.includes("adios")?{
+    =TRUE
+    ~FALSE
+}
+
+//Pregunta 6:
+::templates literals :: Las Templates literals se crean usando las {=tildes invertidas}. 
+
+//Pregunta 7:
+
+::templates literals :: Las Templates literals permiten introducir variables usando el siguiente marcador {=$\{variable\}}.
+
+//Pregunta 8:
+
+::declaracion regexp :: Maneras de delarar una expresión regular, elige una o varias opciones.{
+    ~%30%let pattern \= /^\w$/g
+    ~%-50%let pattern \= new RegExp('^\w$','g')
+    ~%30%let pattern \= new RegExp(/^\w$/,'g')
+    ~%100%A y C son correctas y, además, aceptaría una cadena como primer parámetro pero doblando la barra invertida en los caracteres especiales.
+}
+
+//Pregunta 9:
+::clases de caracteres :: ¿Qué diferencia hay entre "\w" y "\W"?{
+    ~\W acepta cualquier caracter en mayúscula.
+    ~\W acepta caracteres especiales como la ñ o las tildes.
+    =\W es el inverso de \w. Equivale [^A-Za-z0-9_].
+    ~\W es el inverso de \w. Equivale [A-Za-z0-9_].
+} 
+
+//Pregunta 10:
+::cuantificadores :: ¿Qué significa el siguiente patrón? /\d\{2,\}/ {
+    =Significa que ha de haber como mínimo dos dígitos y como máximo indefinidos.
+    ~Ese patrón es erroneo porque se han de especificar dos valores.
+    ~Acepta un valor de dos dígitos con decimales. 
+}
+
+//Pregunta 11:
+::cuantificadores :: ¿Cuál es el cuantificador para especificar 0 o más elementos del caracter al que sucede? {=*}
+
+//Pregunta 12:
+::captura de grupos :: ¿Qué significa (\2)? {
+    ~Especifica que se debe de poner un 2 en esa posición.
+    =Es una referencia al grupo de captura número 2 e implica que en esta posición debe de encontrarse el mismo valor utilizado en el grupo 2 original.
+} 
+
+//Pregunta 13:
+::match y matchAll :: ¿Qué diferencia hay entre usar el método match() o el matchAll().{
+    ~%50%match() devuelve un array con los grupos de captura del elemento que coincide con el patrón, mientras que matchAll() devuelve un iterable que contiene varios arrays equivalentes a match() para cada una de las coincidencias con el patrón.
+    ~%-50%match() y matchAll() funcionan de la misma manera.
+    ~%50%match() no necesita la flag de búsqueda global 'g' y matchAll() siempre la requiere. 
+    ~%100%A y C son correctas.
+}
+
+//Pregunta 14:
+:: json :: ¿Qué es el deep copy o deep clone?{
+    ~Es una copia exactamente igual de todos los atributos del objeto.
+    =Es una copia exactamente igual realizada en una reserva de memoria totalmente independiente de cada uno de los atributos, inclusive los que son objetos mutables, del objeto original.
+}
+
+
+
+
