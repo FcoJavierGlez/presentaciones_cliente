@@ -113,21 +113,21 @@ footer .col3 {
     position: relative;
 }
 .card-presentation:hover {
-    animation: card_presentation 2s forwards;
-    -webkit-animation: card_presentation 2s forwards;
-    -moz-animation: card_presentation 2s forwards;
+    animation: card_presentation 1.5s forwards;
+    -webkit-animation: card_presentation 1.5s forwards;
+    -moz-animation: card_presentation 1.5s forwards;
 }
 @keyframes card_presentation {
     from { transform: scale(1) }
-    to { transform: scale(1.1) }
+    to { transform: scale(1.03) }
 }
 .card-presentation:not(:hover) {
-    animation: cancel_card_presentation 2s forwards;
-    -webkit-animation: cancel_card_presentation 2s forwards;
-    -moz-animation: cancel_card_presentation 2s forwards;
+    animation: cancel_card_presentation 1.5s forwards;
+    -webkit-animation: cancel_card_presentation 1.5s forwards;
+    -moz-animation: cancel_card_presentation 1.5s forwards;
 }
 @keyframes cancel_card_presentation {
-    from { transform: scale(1.1) }
+    from { transform: scale(1.03) }
     to { transform: scale(1) }
 }
 .card-string {
