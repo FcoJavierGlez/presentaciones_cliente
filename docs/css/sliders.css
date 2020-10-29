@@ -209,6 +209,12 @@ li {
 .max .w80 {
     width: 90%;
 }
+.w90 {
+    width: 90%;
+}
+.max .w90 {
+    width: 100%;
+}
 
 .grid {
     display: grid;

@@ -240,7 +240,7 @@
 
                 <div id="25" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p class="subtitle">Character classes</p>
                         <p><b>/\w/ Word</b> nos permite capturar cualquier letra, equivalente a [A-Za-z0-9_]:</p>
                         <img src="../img/regex/backslash_w.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/\W/ Not word</b> al revés que el caso anterior, equivale a [^A-Za-z0-9_]:</p>
@@ -250,7 +250,7 @@
 
                 <div id="26" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p class="subtitle">Character classes</p>
                         <p><b>/\d/ Digit</b> nos permite capturar cualquier dígito, equivalente a [0-9]:</p>
                         <img src="../img/regex/backslash_d.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/\D/ Not digit</b> al revés que el caso anterior, equivale a [^0-9]:</p>
@@ -260,7 +260,7 @@
 
                 <div id="27" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p class="subtitle">Character classes</p>
                         <p><b>/\s/ Whitespace</b> nos permite capturar un espacio en blanco:</p>
                         <img src="../img/regex/backslash_s.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/\S/ Not whitespace</b> al revés que el caso anterior:</p>
@@ -270,7 +270,7 @@
 
                 <div id="28" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p class="subtitle">Character classes</p>
                         <p><b>/\t/ Tab</b> nos permite capturar una tabulación:</p>
                         <img src="../img/regex/backslash_t.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/\n/ Line feed</b> nos permite capturar un salto de línea:</p>
@@ -280,7 +280,7 @@
 
                 <div id="29" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Character classes.</p>
+                        <p class="subtitle">Character classes</p>
                         <p><b>/./ Dot</b> nos permite capturar cualquier caracter:</p>
                         <img src="../img/regex/dot.png" alt="" class="w20 margin-0-auto">
                     </div>
@@ -288,7 +288,7 @@
 
                 <div id="30" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p class="subtitle">Quantifiers</p>
                         <p><b>/a?/ Optional</b> el elemento o grupo que precede a este caracter es opcional puede estar o no:</p>
                         <img src="../img/regex/optional.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/a+/ Plus</b> el elemento o grupo que precede a este caracter aparecerá una o más veces:</p>
@@ -298,7 +298,7 @@
 
                 <div id="31" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p class="subtitle">Quantifiers</p>
                         <p><b>/a*/ Star</b> el elemento o grupo que precede a este caracter aparecerá cero o más veces:</p>
                         <img src="../img/regex/star.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/a{4}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador:</p>
@@ -308,7 +308,7 @@
 
                 <div id="32" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p class="subtitle">Quantifiers</p>
                         <p><b>/a{1,3}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador entre un valor mínimo y un valor máximo:</p>
                         <img src="../img/regex/quantifier2.PNG" alt="" class="w15 margin-0-auto">
                         <p><b>/a{1,}/ Quantifier</b> delimita el número del elemento o grupo que precede a este cuantificador con un valor mínimo pero un máximo indefinido:</p>
@@ -318,9 +318,127 @@
 
                 <div id="33" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Caracteres especiales: Quantifiers.</p>
+                        <p class="subtitle">Quantifiers</p>
                         <p><b>/a(e|i)+)/ Alternation</b> finalmente el alternador que nos permite elegir entre múltiples posibilidades:</p>
                         <img src="../img/regex/alternation.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="34" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Goups & ranges</p>
+                        <p>
+                            En el ejemplo anterior vimos un paréntesis con dos posibles valores, <b>los paréntesis son grupos de captura</b>.
+                        </p>
+                        <p>
+                            Ahora mismo lo más <b>importante</b> es saber que los <u>grupos de captura se clasifican en orden de aparición, 
+                            priorizando los paréntesis internos y posteriormente los contiguos</u>. En el que, aunque no usemos paréntesis, 
+                            <u>por defecto el grupo de captura [0] será toda la cadena coincidente con nuestra RegExp</u>.
+                        </p>
+                        <div class="c2 margin-0-auto justify-items-center">
+                            <img src="../img/regex/groups0.png" alt="" class="w50">
+                            <img src="../img/regex/groups0_2.png" alt="" class="w90">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="35" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Goups & ranges</p>
+                        <p><b>/(\n)/ Numeric reference</b> en razón al orden de los grupos, podemos referenciar el valor de un grupo para 
+                            que se repita su comprobación en el patrón:</p>
+                        <div class="r2">
+                            <img src="../img/regex/groups1.png" alt="" class="w50 margin-0-auto">
+                            <img src="../img/regex/groups1_2.png" alt="" class="w50 margin-0-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="36" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Goups & ranges</p>
+                        <p><b>/[ei]/ Character set</b> nos permite seleccionar un caracter que coincidan con algún elemento entre ambos corchetes:</p>
+                        <img src="../img/regex/character_set.PNG" alt="" class="w20 margin-0-auto">
+                        <p><b>/[ei]/g Character set</b> usando la globalidad nos permite seleccionar aquellos caracteres que coincidan con algún elemento entre ambos corchetes:</p>
+                        <img src="../img/regex/character_set2.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="37" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Goups & ranges</p>
+                        <p><b>/[^ei]/g Negated set</b> usando la globalidad nos permite seleccionar aquellos caracteres que no pertenezcan a alguno de los elementos entre ambos corchetes:</p>
+                        <img src="../img/regex/negated_set.PNG" alt="" class="w20 margin-0-auto">
+                        <p><b>/[^ei]/ Negated set</b> nos permite seleccionar un caracter que no coincidan con algún elemento entre ambos corchetes:</p>
+                        <img src="../img/regex/negated_set2.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="38" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Goups & ranges</p>
+                        <p>
+                            <b>/[A-Z]/g Range</b> usando la globalidad podemos seleccionar todos aquellos caracteres que están comprendidos entre la "A" y "Z" en 
+                            el código ASCII:
+                        </p>
+                        <img src="../img/regex/range1.PNG" alt="" class="w20 margin-0-auto">
+                        <p>
+                            <b>/[^A-Z]/ Negated range</b> selecciona todos los caracteres que no estén comprendidos en dicho rango:
+                        </p>
+                        <img src="../img/regex/range2.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="39" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Lookaround</p>
+                        <p>
+                            <b>/\d(?=px)/g Positive lookahead</b> usando la globalidad podemos seleccionar todos aquellos dígitos que haya delante de una cadena "px":
+                        </p>
+                        <img src="../img/regex/lookaround1.PNG" alt="" class="w20 margin-0-auto">
+                        <p>
+                            <b>/\d(?!px)/g Negative lookahead</b> usando la globalidad podemos seleccionar todos aquellos dígitos que <b>no</b> haya delante de una cadena "px":
+                        </p>
+                        <img src="../img/regex/lookaround2.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="40" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Anchors</p>
+                        <p>
+                            <b>/^a/ Beginning</b> la cadena empieza por... :
+                        </p>
+                        <img src="../img/regex/anchor1.PNG" alt="" class="w15 margin-0-auto">
+                        <p>
+                            <b>/a$/ End</b> la cadena termina en... :
+                        </p>
+                        <img src="../img/regex/anchor2.PNG" alt="" class="w15 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="41" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Anchors</p>
+                        <p>
+                            <b>/s\b/g Word boundary</b> usando la globalidad selecciona todas las letras "s" del final de cada palabra:
+                        </p>
+                        <img src="../img/regex/anchor3.PNG" alt="" class="w20 margin-0-auto">
+                        <p>
+                            <b>/s\B/g Not word boundary</b> usando la globalidad selecciona todas las letras "s" que no estén al final de cada palabra:
+                        </p>
+                        <img src="../img/regex/anchor4.PNG" alt="" class="w20 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="42" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Escaped characters</p>
+                        <p>
+                            <b>/\(\)\[\]\.\+\*\?\-\\/ Escaped characters</b> podemos comprobar si la cadena posee alguno de los caracteres que tienen un comportamiento 
+                            predeterminado en un RegExp (por ejemplo "?") empleando la barra invertida delante de dicho caracter:
+                        </p>
+                        <img src="../img/regex/escaped_characters.PNG" alt="" class="w50 margin-0-auto">
                     </div>
                 </div>
 
