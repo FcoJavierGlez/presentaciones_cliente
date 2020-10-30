@@ -43,7 +43,7 @@ main h2 {
     display: none;
 }
 footer img {
-    height: 50px;
+    height: 40px;
 }
 footer h2 {
     font-size: 20px;
@@ -130,22 +130,17 @@ footer .col3 {
     from { transform: scale(1.03); box-shadow: 0px 0px 10px 10px goldenrod; }
     to { transform: scale(1) }
 }
-.card-string {
-    background-image: url(../img/string/card_string.png);
+.backgr-img-norep-cent-cover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.card-string {
+    background-image: url(../img/string/card_string.png);
 }
 .card-json {
     background-image: url(../img/json/card_json.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .card-na{
     background-color: white;
-    /* background-image: url(../img/json/card_json.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
