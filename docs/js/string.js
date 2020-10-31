@@ -1,5 +1,5 @@
 /**
- * 
+ * @author Franciso Javier González Sabariego
  */
 let cadena      = new String("Hola mundo");
 let num         = 10;

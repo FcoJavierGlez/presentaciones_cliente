@@ -1,5 +1,5 @@
 /**
- * 
+ * @author Franciso Javier González Sabariego
  */
 let a = { 
     id: 433,
@@ -17,3 +17,7 @@ let a = {
         }
     ]
 }
+
+/* JSON */
+console.log(`      %cJSON`, "font-weight: bold; color: grey;");
+console.log(`%c=================\n\n`, "font-weight: bold;");
