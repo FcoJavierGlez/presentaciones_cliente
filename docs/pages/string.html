@@ -180,7 +180,7 @@
                 <div id="18" class="slide slide-hide">
                     <div class="container-slide">
                         <p class="subtitle">Métodos</p>
-                        <p><b>include():</b> Método que determina si una cadena de texto se puede encontrar dentro de otra, devolviendo true o false. Sensible al uso de mayúsculas.</p>
+                        <p><b>includes():</b> Método que determina si una cadena de texto se puede encontrar dentro de otra, devolviendo true o false. Sensible al uso de mayúsculas.</p>
                         <img src="../img/string/include.PNG" alt="" class="w20 img-left">
                     </div>
                 </div>
@@ -221,7 +221,10 @@
                 <div id="23" class="slide slide-hide">
                     <div class="container-slide">
                         <p class="subtitle">¿Qué es una expresión regular?</p>
-                        <p>Una expresión regular nos permite encontrar elementos o secciones coincidentes en una cadena respecto a un patrón definido.</p>
+                        <p>
+                            Una expresión regular <b>es un patrón diseñado con el propósito de encontrar, extraer o validar una, o varias secciones, 
+                            dentro de una cadena</b> que sean coincidentes respecto al susodicho patrón.
+                        </p>
                         <p></p>
                         <img src="../img/string_regex/match.PNG" alt="" class="w50 margin-0-auto">
                     </div>
@@ -320,14 +323,14 @@
                 <div id="33" class="slide slide-hide">
                     <div class="container-slide">
                         <p class="subtitle">Quantifiers</p>
-                        <p><b>/a(e|i)+)/ Alternation</b>: finalmente el alternador que nos permite elegir entre múltiples posibilidades:</p>
+                        <p><b>/a(e|i)+/ Alternation</b>: finalmente el alternador que nos permite elegir entre múltiples posibilidades:</p>
                         <img src="../img/regex/alternation.PNG" alt="" class="w20 margin-0-auto">
                     </div>
                 </div>
 
                 <div id="34" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Groups & ranges</p>
+                        <p class="subtitle">Groups, sets & ranges</p>
                         <p>
                             En el ejemplo anterior vimos un paréntesis con dos posibles valores, <b>los paréntesis son grupos de captura</b>.
                         </p>
@@ -345,7 +348,7 @@
 
                 <div id="35" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Groups & ranges</p>
+                        <p class="subtitle">Groups, sets & ranges</p>
                         <p><b>/(\n)/ Numeric reference</b>: en razón al orden de los grupos, podemos referenciar el valor de un grupo para 
                             que se repita su comprobación en el patrón:</p>
                         <div class="r2">
@@ -357,7 +360,7 @@
 
                 <div id="36" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Groups & ranges</p>
+                        <p class="subtitle">Groups, sets & ranges</p>
                         <p><b>/[ei]/ Character set</b>: nos permite seleccionar un caracter que coincidan con algún elemento entre ambos corchetes:</p>
                         <img src="../img/regex/character_set.PNG" alt="" class="w20 margin-0-auto">
                         <p><b>/[ei]/g Character set</b>: <u>usando la globalidad nos permite seleccionar todos aquellos caracteres que coincidan con algún elemento entre ambos corchetes</u>:</p>
@@ -367,7 +370,7 @@
 
                 <div id="37" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Groups & ranges</p>
+                        <p class="subtitle">Groups, sets & ranges</p>
                         <p><b>/[^ei]/g Negated set</b>: <u>usando la globalidad nos permite seleccionar todos aquellos caracteres que no pertenezcan a alguno de los elementos entre ambos corchetes</u>:</p>
                         <img src="../img/regex/negated_set.PNG" alt="" class="w20 margin-0-auto">
                         <p><b>/[^ei]/ Negated set</b>: nos permite seleccionar un caracter que no coincidan con algún elemento entre ambos corchetes:</p>
@@ -377,7 +380,7 @@
 
                 <div id="38" class="slide slide-hide">
                     <div class="container-slide">
-                        <p class="subtitle">Groups & ranges</p>
+                        <p class="subtitle">Groups, sets & ranges</p>
                         <p>
                             <b>/[A-Z]/g Range</b>: <u>usando la globalidad podemos seleccionar todos aquellos caracteres que están comprendidos entre la "A" y "Z"</u> en 
                             el código ASCII:
