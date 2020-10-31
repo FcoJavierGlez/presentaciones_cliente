@@ -224,7 +224,7 @@ console.log(`"The Matrix".search(/casa/i) => ${"The Matrix".search(/casa/i)}\n\n
 //split() con RegExp
 console.log(`%cEjemplo split() con RegExp:`, "font-weight: bold;");
 console.log(`"Esternocleidomastoideo".split(/o/ig) =>`,"Esternocleidomastoideo".split(/o/ig));
-console.log(`"Yo también me odio por haceros leer tanto... oh tal vez no.".split(/e/ig) =>`,"Yo también me odio por haceros leer tanto... oh tal vez no.".split(/e/ig));
+console.log(`"Yo también me odio por haceros leer tanto...".split(/e/ig) =>`,"Yo también me odio por haceros leer tanto...".split(/e/ig));
 console.log(`\n\n`);
 
 
