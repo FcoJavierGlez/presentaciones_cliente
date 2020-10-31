@@ -41,7 +41,7 @@
                         <p class="subtitle">¿Qué es JSON?</p>
                         <p>JSON es una esctructura de datos basada en la notación de un objeto literal de JavaScript.</p>
                         <p>A diferencia de un objeto literal de JavaScript, JSON no soporta ni métodos ni funciones por tanto que es únicamente una esctructura de datos basada en clave &rarr; valor.</p>
-                        <img src="../img/json/json1.PNG" alt="" class="w30 margin-0-auto">
+                        <img src="../img/json/json1.PNG" alt="" class="w20 margin-0-auto">
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-                <div id="3" class="slide-hide">
+                <div id="4" class="slide-hide">
                     <div class="container-slide">
                         <p class="subtitle">Métodos</p>
                         <p><b>JSON.parse(string):</b> El método parse() recibe como parámetro una cadena con formato JSON y lo convierte en un objeto JSON.</p>
@@ -78,6 +78,109 @@
                     </div>
                 </div>
 
+                <div id="5" class="slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Clonando un JSON: Spread Operator (1ª parte)</p>
+                        <p>
+                            A la hora de copiar un JSON es recomendable hacer uso del <b>spread operator</b>, sin embargo, hay que tener presente que <u>aquellos atributos 
+                            que posean un objeto mutable (array, JSON) también deberán ser copiados con un spread operator</u>:
+                        </p>
+                        <div class="c2 justify-items-center">
+                            <img src="../img/json/json5.PNG" alt="" class="w60">
+                            <img src="../img/json/json6.PNG" alt="" class="w60">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="6" class="slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Clonando un JSON: Spread Operator (2ª parte)</p>
+                        <p>
+                            Pero ¿qué pasaría si quisieramos clonar una estructura de datos tan compleja como ésta? Sería una locura...
+                        </p>
+                        <img src="../img/json/json7.PNG" alt="" class="w40 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="7" class="slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Clonando un JSON: Deep Clone</p>
+                        <p>
+                            Para realizar una copia es recomendable hacer uso del <b>Deep Clone o Deep Copy</b>, que consiste en  
+                            convertir en cadena el objeto a clonar usando <b>stringify()</b> y, posteriormente, convertirla a un nuevo
+                            JSON totalmente independiente con <b>parse()</b>.
+                        </p>
+                        <img src="../img/json/json8.PNG" alt="" class="w30 margin-0-auto">
+                    </div>
+                </div>
+
+                <div id="8" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">Recursos y enlaces de interés:</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"><p>JSON MDN</p></a>
+                        <b><p>&darr;&darr; Si pulsas F12 podrás algunos ejemplos en la consola &darr;&darr;</p></b>
+                    </div>
+                </div>
+
+                <div id="9" class="slide slide-hide">
+                    <div class="container-slide">
+                        <p class="subtitle">¿Preguntas?</p>
+                        <div class="grid justify-items-center align-center">
+                            <img src="../img/question.gif" class="w60" alt="Gif animado">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="10" class="slide slide-hide">
+                    <div class="container-slide">
+                        <div class="c2 align-center justify-content-center cgap5pc">
+                            <div>
+                                <div class="r3 rgap5pc">
+                                    <a class="no-link" href="https://twitter.com/intent/follow?screen_name=rafacruz7" target="_blank">
+                                        <div class="rrsss-line rrss-line-end">
+                                            <div class="blue-twitter comic-letter presentation-rrss">@rafacruz7</div>
+                                            <img src="../img/rrss/twitter.png" alt="icono twitter" height="50px">
+                                        </div>
+                                    </a>
+                                    <a class="no-link" href="https://github.com/cralr" target="_blank">
+                                        <div class="rrsss-line rrss-line-end">
+                                            <div class="black comic-letter presentation-rrss">cralr</div>
+                                            <img src="../img/rrss/github.png" alt="icono github" height="50px">
+                                        </div>
+                                    </a>
+                                    <a class="no-link" href="https://www.linkedin.com/in/rafael-miguel-cruz-%C3%A1lvarez-52b487172/" target="_blank">
+                                        <div class="rrsss-line rrss-line-end">
+                                            <div class="blue-linkedin comic-letter presentation-rrss">Rafael Miguel Cruz Álvarez</div>
+                                            <img src="../img/rrss/linkedin.png" alt="icono linkedin" height="50px">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="r3 rgap5pc">
+                                    <a class="no-link" href="https://twitter.com/intent/follow?screen_name=Fco_Javier_Glez" target="_blank">
+                                        <div class="rrsss-line rrss-line-start">
+                                            <img src="../img/rrss/twitter.png" alt="icono twitter" height="50px">
+                                            <div class="blue-twitter comic-letter presentation-rrss">@Fco_Javier_Glez</div>
+                                        </div>
+                                    </a>
+                                    <a class="no-link" href="https://github.com/FcoJavierGlez" target="_blank">
+                                        <div class="rrsss-line rrss-line-start">
+                                            <img src="../img/rrss/github.png" alt="icono github" height="50px">
+                                            <div class="black comic-letter presentation-rrss">FcoJavierGlez</div>
+                                        </div>
+                                    </a>
+                                    <a class="no-link" href="https://www.linkedin.com/in/francisco-javier-gonz%C3%A1lez-sabariego-51052a175/" target="_blank">
+                                        <div class="rrsss-line rrss-line-start">
+                                            <img src="../img/rrss/linkedin.png" alt="icono linkedin" height="50px">
+                                            <div class="blue-linkedin comic-letter presentation-rrss">Fº Javier González Sabariego</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- <div id="n+1" class="slide slide-hide">
                     <div class="container-slide">
