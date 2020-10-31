@@ -1,4 +1,4 @@
-$CATEGORY: String, Regexp y JSon
+$CATEGORY: $course$/top/Tema3/StringRegexpJSon
 
 //Pregunta 1:
 ::String :: ¿Qué es String? {
@@ -40,9 +40,9 @@ $CATEGORY: String, Regexp y JSon
 //Pregunta 8:
 
 ::declaracion regexp :: Maneras de delarar una expresión regular, elige una o varias opciones.{
-    ~%30%let pattern \= /^\w$/g
+    ~%33.33333%let pattern \= /^\w$/g
     ~%-50%let pattern \= new RegExp('^\w$','g')
-    ~%30%let pattern \= new RegExp(/^\w$/,'g')
+    ~%33.33333%let pattern \= new RegExp(/^\w$/,'g')
     ~%100%A y C son correctas y, además, aceptaría una cadena como primer parámetro pero doblando la barra invertida en los caracteres especiales.
 }
 
@@ -79,11 +79,21 @@ $CATEGORY: String, Regexp y JSon
 }
 
 //Pregunta 14:
-:: json :: ¿Qué es el deep copy o deep clone?{
-    ~Es una copia exactamente igual de todos los atributos del objeto.
-    =Es una copia exactamente igual realizada en una reserva de memoria totalmente independiente de cada uno de los atributos, inclusive los que son objetos mutables, del objeto original.
+:: json :: ¿Qué es JSON?{
+    ~JSON es una esctructura de datos basada en la notación de un objeto literal de JavaScript, soporta funciones y tiene constructor.
+    =JSON es una esctructura de datos basada en la notación de un objeto literal de JavaScript, pero no soporta funciones y no usa constructor.
 }
 
+//Pregunta 15:
+:: json :: ¿Qué método recibe como parámetro un objeto de tipo JSON y lo convierte a cadena?{
+    ~JSON.parse()
+    =JSON.stringify()
+}
 
+//Pregunta 16:
+:: json :: ¿Qué es el deep copy o deep clone?{
+    ~Es una copia exactamente igual de todos los atributos del objeto.
+    =Es una copia exactamente igual de cada uno de los atributos realizada en una reserva de memoria totalmente independiente, inclusive aquellos atributos que son objetos mutables.
+}
 
 
